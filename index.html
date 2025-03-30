@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pooja Patel | Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Splash Cursor Canvas -->
+    <canvas id="splash-cursor"></canvas>
+    
+    <!-- Meta Balls Canvas -->
+    <canvas id="meta-balls"></canvas>
+    
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">PP</div>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="glitch" data-text="POOJA PATEL">POOJA PATEL</h1>
+                <div class="typewriter">
+                    <span id="typewriter-text"></span><span class="cursor">|</span>
+                </div>
+                <div class="hero-links">
+                    <a href="mailto:poojaspatel013@gmail.com" class="btn"><i class="fas fa-envelope"></i> Email</a>
+                    <a href="https://linkedin.com/in/" class="btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/" class="btn"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Aspiring Full Stack Developer with expertise in MERN, MEAN stacks and Python, passionate about building scalable, secure, and high-performance web applications. Skilled in full-stack development, API integration, and cybersecurity, with hands-on experience in vulnerability assessments.</p>
+                    <p>Eager to contribute to innovative projects that leverage cutting-edge technologies to drive progress. I'm also a published author with successful novels and poetry books.</p>
+                    <div class="about-details">
+                        <div class="detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Vadodara, Gujarat, India</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>B.Tech - Computer Science Engineering</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Open to Work Opportunities</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pixel-card" id="about-card">
+                    <div class="card-content">
+                        <div class="profile-img"></div>
+                        <h3>Pooja Patel</h3>
+                        <p>Full Stack Developer</p>
+                        <p>Cybersecurity Enthusiast</p>
+                        <p>Published Author</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Web Development</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-react"></i></div>
+                            <div class="skill-name">React.js</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                            <div class="skill-name">Node.js</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-js"></i></div>
+                            <div class="skill-name">JavaScript</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-angular"></i></div>
+                            <div class="skill-name">Angular</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <div class="skill-name">MongoDB</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <div class="skill-name">Python</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Cybersecurity</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-shield-alt"></i></div>
+                            <div class="skill-name">Kali Linux</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-bug"></i></div>
+                            <div class="skill-name">Vulnerability Assessment</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+                            <div class="skill-name">Networking</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Tools & Platforms</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                            <div class="skill-name">Git</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-github"></i></div>
+                            <div class="skill-name">GitHub</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                            <div class="skill-name">Google Cloud</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                            <div class="skill-name">Azure</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                            <div class="skill-name">AWS</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card pixel-card">
+                    <div class="card-content">
+                        <h3>Indian Recipes Platform</h3>
+                        <p>A responsive recipe-sharing platform showcasing regional and ancestral Indian recipes.</p>
+                        <div class="project-tech">
+                            <span>React.js</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-small"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="#" class="btn-small"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card pixel-card">
+                    <div class="card-content">
+                        <h3>Dive - Luxury Fashion Platform</h3>
+                        <p>An e-commerce platform featuring exclusive luxury fashion collections with payment gateway integration.</p>
+                        <div class="project-tech">
+                            <span>Express.js</span>
+                            <span>MongoDB</span>
+                            <span>API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-small"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="#" class="btn-small"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card pixel-card">
+                    <div class="card-content">
+                        <h3>Weather Forecasting App</h3>
+                        <p>A real-time weather forecasting web app with AI-driven suggestions using third-party APIs.</p>
+                        <div class="project-tech">
+                            <span>React.js</span>
+                            <span>API</span>
+                            <span>AI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-small"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="#" class="btn-small"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card pixel-card">
+                    <div class="card-content">
+                        <h3>Digital Art Gallery</h3>
+                        <p>An interactive platform for digital artists to showcase and sell their artwork.</p>
+                        <div class="project-tech">
+                            <span>React.js</span>
+                            <span>Canvas</span>
+                            <span>API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-small"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="#" class="btn-small"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card pixel-card">
+                    <div class="card-content">
+                        <h3>FemPlan</h3>
+                        <p>A task manager app for women that tracks menstrual cycles, diet, and more.</p>
+                        <div class="project-tech">
+                            <span>Flask</span>
+                            <span>Bootstrap</span>
+                            <span>Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-small"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="#" class="btn-small"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card pixel-card">
+                    <div class="card-content">
+                        <h3>ChronoVault</h3>
+                        <p>A mental health care and journaling app that helps users reduce anxiety and depression levels.</p>
+                        <div class="project-tech">
+                            <span>MERN Stack</span>
+                            <span>Community Platform</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-small"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="#" class="btn-small"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content pixel-card">
+                        <div class="card-content">
+                            <h3>Cybersecurity Associate</h3>
+                            <h4>Pregard</h4>
+                            <p class="timeline-date">July 2023 - October 2023 (3 months)</p>
+                            <ul>
+                                <li>Conducted vulnerability assessments and penetration testing on 10+ systems, reducing security risks by 30%.</li>
+                                <li>Gained hands-on experience in ethical hacking, Kali Linux, Windows access control, and security breach prevention.</li>
+                                <li>Implemented firewall rules and network security protocols to safeguard sensitive data.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications-grid">
+                <div class="certification-card pixel-card">
+                    <div class="card-content">
+                        <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                        <h3>Google Cloud Cybersecurity Certificate</h3>
+                        <p>Earned 5+ skill badges in VM instances, networking, and firewall management.</p>
+                    </div>
+                </div>
+                
+                <div class="certification-card pixel-card">
+                    <div class="card-content">
+                        <div class="cert-icon"><i class="fas fa-brain"></i></div>
+                        <h3>Google Cloud - Prompt Design in Vertex AI Studio</h3>
+                        <p>Developed expertise in Generative AI using Vertex AI Studio, achieved 10,000+ skill credits.</p>
+                    </div>
+                </div>
+                
+                <div class="certification-card pixel-card">
+                    <div class="card-content">
+                        <div class="cert-icon"><i class="fas fa-code"></i></div>
+                        <h3>Advanced Software Engineering Job Simulation</h3>
+                        <p>Mastered data structures, software architecture, and relational database design.</p>
+                    </div>
+                </div>
+                
+                <div class="certification-card pixel-card">
+                    <div class="card-content">
+                        <div class="cert-icon"><i class="fab fa-aws"></i></div>
+                        <h3>AWS Cloud Essentials</h3>
+                        <p>Fundamentals of AWS cloud services, architecture, and best practices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Education & Achievements Section -->
+    <section id="education-achievements">
+        <div class="container">
+            <div class="two-column-grid">
+                <div class="column">
+                    <h2 class="section-title">Education</h2>
+                    <div class="education-card pixel-card">
+                        <div class="card-content">
+                            <h3>B.Tech - Computer Science Engineering</h3>
+                            <h4>Parul University</h4>
+                            <p>August 2022 - May 2026</p>
+                            <p><strong>Relevant Coursework:</strong> Cloud Computing, Web Development, Cybersecurity, Database Management</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <h2 class="section-title">Achievements</h2>
+                    <div class="achievements-list">
+                        <div class="achievement-item pixel-card">
+                            <div class="card-content">
+                                <div class="achievement-icon"><i class="fas fa-bolt"></i></div>
+                                <h3>API Optimization Expert</h3>
+                                <p>Achieved 20% faster API response time, enhancing user experience.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="achievement-item pixel-card">
+                            <div class="card-content">
+                                <div class="achievement-icon"><i class="fas fa-rocket"></i></div>
+                                <h3>Successful App Launch</h3>
+                                <p>Developed and deployed scalable web applications with 95% uptime.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="achievement-item pixel-card">
+                            <div class="card-content">
+                                <div class="achievement-icon"><i class="fas fa-book"></i></div>
+                                <h3>Published Author</h3>
+                                <p>Self-published author with novels and poetry books with successful impact.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="achievement-item pixel-card">
+                            <div class="card-content">
+                                <div class="achievement-icon"><i class="fas fa-medal"></i></div>
+                                <h3>NCC Cadet</h3>
+                                <p>Served for 3 years in the National Cadet Corps, developing leadership and teamwork skills.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Memberships Section -->
+    <section id="memberships">
+        <div class="container">
+            <h2 class="section-title">Memberships</h2>
+            <div class="memberships-grid">
+                <div class="membership-card pixel-card">
+                    <div class="card-content">
+                        <div class="membership-icon"><i class="fab fa-google"></i></div>
+                        <h3>Google Cloud Innovator</h3>
+                    </div>
+                </div>
+                
+                <div class="membership-card pixel-card">
+                    <div class="card-content">
+                        <div class="membership-icon"><i class="fab fa-google"></i></div>
+                        <h3>Google Developer</h3>
+                    </div>
+                </div>
+                
+                <div class="membership-card pixel-card">
+                    <div class="card-content">
+                        <div class="membership-icon"><i class="fab fa-google"></i></div>
+                        <h3>Google Women in Tech</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:poojaspatel013@gmail.com">poojaspatel013@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+919023562773">+91 9023562773</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://linkedin.com/in/" target="_blank">LinkedIn</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/" target="_blank">GitHub</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Vadodara, Gujarat, India</span>
+                    </div>
+                </div>
+                
+                <div class="contact-form pixel-card">
+                    <div class="card-content">
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">PP</div>
+                <p>&copy; 2025 Pooja Patel. All Rights Reserved.</p>
+                <div class="footer-social">
+                    <a href="mailto:poojaspatel013@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://linkedin.com/in/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="splash-cursor.js"></script>
+    <script src="meta-balls.js"></script>
+    <script src="pixel-card.js"></script>
+</body>
+</html>
