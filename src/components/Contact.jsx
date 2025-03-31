@@ -43,7 +43,7 @@ export default function Contact() {
           <div className="contact-info">
             <div className="contact-item">
               <i className="fas fa-envelope"></i>
-              <a href="mailto:pooja@example.com">pooja@example.com</a>
+              <a href="mailto:poojaspatel1375@gmail.com">poojaspatel1375@gmail.com</a>
             </div>
             <div className="contact-item">
               <i className="fas fa-phone"></i>

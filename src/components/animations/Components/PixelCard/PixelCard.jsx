@@ -1,6 +1,3 @@
-/*
-	Installed from https://reactbits.dev/default/
-*/
 
 import { useEffect, useRef } from "react";
 import "./PixelCard.css";

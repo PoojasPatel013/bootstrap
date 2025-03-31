@@ -13,7 +13,7 @@ export default function Projects() {
       title: "Dive - Luxury Fashion Platform",
       description:
         "An e-commerce platform featuring exclusive luxury fashion collections with payment gateway integration.",
-      tech: ["Express.js", "MongoDB", "API", "React"],
+      tech: ["Express.js", "MongoDB", "API"],
       demoLink: "#",
       codeLink: "#",
     },
