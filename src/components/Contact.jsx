@@ -47,7 +47,7 @@ export default function Contact() {
             </div>
             <div className="contact-item">
               <i className="fas fa-phone"></i>
-              <a href="tel:+919023562773">+91 9023562773</a>
+              <a href="tel:+">+91 </a>
             </div>
             <div className="contact-item">
               <i className="fab fa-linkedin"></i>
