@@ -7,7 +7,7 @@ export default function Hero() {
   const typewriterRef = useRef(null)
 
   useEffect(() => {
-    const phrases = ["Full Stack Developer", "MERN Stack Developer", "Cybersecurity Enthusiast", "Published Author"]
+    const phrases = ["Full Stack Developer", "Cloud Engineer", "Published Author"]
 
     let phraseIndex = 0
     let charIndex = 0
@@ -60,13 +60,13 @@ export default function Hero() {
             <span className="cursor">|</span>
           </div>
           <div className="hero-links">
-            <a href="mailto:pooja@example.com" className="btn">
+            <a href="mailto:poojaspatel1375@gmail.com" className="btn">
               <i className="fas fa-envelope"></i> Email
             </a>
             <a href="https://linkedin.com/in/" className="btn">
               <i className="fab fa-linkedin"></i> LinkedIn
             </a>
-            <a href="https://github.com/" className="btn">
+            <a href="https://github.com/PoojasPatel013" className="btn">
               <i className="fab fa-github"></i> GitHub
             </a>
           </div>
