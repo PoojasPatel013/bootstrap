@@ -19,7 +19,7 @@ function App() {
     <div className="app">
       {/* Background Animations */}
       <SplashCursor />
-      <MetaBalls />
+      {/* <MetaBalls /> */}
       
       {/* Main Content */}
       <Header />
