@@ -33,14 +33,13 @@ body {
   color: var(--text-color);
   line-height: 1.6;
   overflow-x: hidden;
-  cursor: default;
+  cursor: none;
 }
 
 a {
   text-decoration: none;
   color: var(--text-color);
   transition: all var(--animation-speed) ease;
-  cursor: pointer;
 }
 
 ul {
@@ -88,7 +87,7 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
-  cursor: pointer;
+  cursor: none;
   transition: all var(--animation-speed) ease;
   position: relative;
   overflow: hidden;
@@ -221,6 +220,118 @@ nav {
   background-color: var(--primary-color);
   transition: all var(--animation-speed) ease;
 }
+/* Add these global styles to your existing CSS */
+
+/* General section styling */
+section {
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: var(--primary-color);
+}
+
+/* Card styling */
+.card-content {
+  padding: 1.5rem;
+}
+
+/* Grid layouts */
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.grid-cols-1 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Timeline styling */
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -2rem;
+  top: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  box-shadow: 0 0 10px var(--primary-color);
+}
+
+.timeline-content {
+  position: relative;
+}
+
+/* Animation effects */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(var(--primary-rgb), 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(var(--primary-rgb), 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(var(--primary-rgb), 0);
+  }
+}
+
+.hover\:transform:hover {
+  transform: translateY(-5px);
+}
+
+.transition-transform {
+  transition-property: transform;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
 
 /* Hero Section */
 #hero {
@@ -718,17 +829,6 @@ footer {
   position: relative;
   width: 100%;
   height: 100%;
-}
-
-/* Add this to ensure the lightning canvas is properly positioned */
-.lightning-container {
-  position: fixed !important;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -2;
-  pointer-events: none;
 }
 
 /* Media Queries */

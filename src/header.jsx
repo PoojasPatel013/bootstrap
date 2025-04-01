@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import "./header.css"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -27,7 +28,9 @@ export default function Header() {
     <header className={`site-header ${scrolled ? "scrolled" : ""}`}>
       <div className="container">
         <div className="header-content">
-          <div className="logo">PP</div>
+          <a href="#hero" className="logo">
+            PP
+          </a>
 
           <div className={`menu-toggle ${isMenuOpen ? "active" : ""}`} onClick={toggleMenu}>
             <div className="bar"></div>
@@ -55,6 +58,11 @@ export default function Header() {
               <li>
                 <a href="#experience" onClick={closeMenu}>
                   Experience
+                </a>
+              </li>
+              <li>
+                <a href="#education-achievements" onClick={closeMenu}>
+                  Education
                 </a>
               </li>
               <li>

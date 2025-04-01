@@ -15,6 +15,7 @@ import Memberships from './components/Memberships';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
+
 function App() {
   return (
     <div className="app">
@@ -32,7 +33,7 @@ function App() {
         <Projects />
         <Experience />
         <Certifications />
-        <EducationAchievements />
+        <EducationAchievements/>
         <Memberships />
         <Contact />
       </main>
