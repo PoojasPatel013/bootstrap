@@ -55,7 +55,7 @@ export default function Contact() {
             </div>
             <div className="contact-item">
               <i className="fab fa-github"></i>
-              <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://github.com/PoojasPatel013" target="_blank" rel="noreferrer">GitHub</a>
             </div>
             <div className="contact-item">
               <i className="fas fa-map-marker-alt"></i>

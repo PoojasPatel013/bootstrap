@@ -7,7 +7,7 @@ export default function Memberships() {
       icon: "fab fa-google",
     },
     {
-      title: "Google Developer",
+      title: "Google Developer program",
       icon: "fab fa-google",
     },
     {

@@ -14,7 +14,7 @@ export default function EducationAchievements() {
                 <h4 className="text-lg font-semibold mb-1">Parul University</h4>
                 <p className="text-sm text-muted-foreground mb-3">August 2022 - May 2026</p>
                 <p>
-                  <strong>Relevant Coursework:</strong> Cloud Computing, Web Development, Cybersecurity, Database
+                  <strong>Relevant Coursework:</strong> Cloud Computing, Web Development, Networking, Database
                   Management
                 </p>
               </div>

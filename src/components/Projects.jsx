@@ -5,7 +5,7 @@ export default function Projects() {
     {
       title: "Indian Recipes Platform",
       description: "A responsive recipe-sharing platform showcasing regional and ancestral Indian recipes.",
-      tech: ["React.js", "Node.js", "MongoDB"],
+      tech: ["Template engine", "Node.js", "MongoDB"],
       demoLink: "#",
       codeLink: "#",
     },
@@ -13,7 +13,7 @@ export default function Projects() {
       title: "Dive - Luxury Fashion Platform",
       description:
         "An e-commerce platform featuring exclusive luxury fashion collections with payment gateway integration.",
-      tech: ["Express.js", "MongoDB", "API"],
+      tech: ["Express.js", "MongoDB", "API", "ReactJS"],
       demoLink: "#",
       codeLink: "#",
     },
@@ -45,6 +45,13 @@ export default function Projects() {
       demoLink: "#",
       codeLink: "#",
     },
+    {
+      title: "Moodie",
+      description: "A personalised journal or diary to log your moods and thoughts.",
+      tech: ["Angular", "TypeScript", "API"],
+      demoLink: "#",
+      codeLink: "#",
+    }
   ]
 
   return (

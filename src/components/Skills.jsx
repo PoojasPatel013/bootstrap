@@ -12,21 +12,22 @@ export default function Skills() {
         ],
       },
       {
-        title: "Cybersecurity",
+        title: "Cloud Platforms and architecture",
         skills: [
-          { name: "Kali Linux", icon: "fas fa-shield-alt" },
-          { name: "Vulnerability Assessment", icon: "fas fa-bug" },
-          { name: "Networking", icon: "fas fa-network-wired" },
-        ],
-      },
-      {
-        title: "Tools & Platforms",
-        skills: [
-          { name: "Git", icon: "fab fa-git-alt" },
-          { name: "GitHub", icon: "fab fa-github" },
           { name: "Google Cloud", icon: "fas fa-cloud" },
           { name: "Azure", icon: "fas fa-cloud" },
           { name: "AWS", icon: "fas fa-cloud" },
+        ],
+      },
+      
+      {
+        title: "Tools & Technologies",
+        skills: [
+          { name: "Git", icon: "fab fa-git-alt" },
+          { name: "GitHub", icon: "fab fa-github" },
+          { name: "Kali Linux", icon: "fas fa-shield-alt" },
+          { name: "Vulnerability Assessment", icon: "fas fa-bug" },
+          { name: "Networking", icon: "fas fa-network-wired" },
         ],
       },
     ]

@@ -9,7 +9,7 @@ export default function Experience() {
     },
     {
       title: "Successful App Launch",
-      description: "Developed and deployed scalable web applications with 95% uptime.",
+      description: "Developed and deployed scalable web applications with significant uptime.",
       icon: "fas fa-rocket",
     },
     {

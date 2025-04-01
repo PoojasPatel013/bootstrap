@@ -7,7 +7,7 @@ export default function About() {
         <h2 className="section-title">About Me</h2>
         <div className="about-content">
           <div className="about-text">
-            <p>Aspiring Cloud engineer with expertise in MERN, MEAN stacks and Python, passionate about building scalable, secure, and high-performance web applications. Skilled in full-stack development, API integration, and cybersecurity, with hands-on experience in vulnerability assessments.</p>
+            <p>Aspiring Cloud engineer with expertise in web development and Python, passionate about building scalable, secure, and high-performance web applications. Skilled in full-stack development, API integration, and cybersecurity, with hands-on experience in vulnerability assessments.</p>
             <p>Eager to contribute to innovative projects that leverage cutting-edge technologies to drive progress. I'm also a published author with successful novels and poetry books.</p>
             <div className="about-details">
               <div className="detail">
@@ -29,7 +29,7 @@ export default function About() {
               <div className="profile-img"></div>
               <h3>Pooja Patel</h3>
               <p>Full Stack Developer</p>
-              <p>Cybersecurity Enthusiast</p>
+              <p>Cloud Engineer</p>
               <p>Published Author</p>
             </div>
           </PixelCard>
