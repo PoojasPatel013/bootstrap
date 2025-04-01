@@ -6,7 +6,7 @@ export default function Projects() {
       title: "Indian Recipes Platform",
       description: "A responsive recipe-sharing platform showcasing regional and ancestral Indian recipes.",
       tech: ["Template engine", "Node.js", "MongoDB"],
-      demoLink: "#",
+      demoLink: "https://flavourfusion-ak9j.onrender.com/",
       codeLink: "#",
     },
     {
@@ -18,7 +18,7 @@ export default function Projects() {
       codeLink: "#",
     },
     {
-      title: "Weather Forecasting App",
+      title: "Weather Forecasting Dashboard",
       description: "A real-time weather forecasting web app with AI-driven suggestions using third-party APIs.",
       tech: ["React.js", "API", "AI"],
       demoLink: "#",
@@ -28,14 +28,14 @@ export default function Projects() {
       title: "Digital Art Gallery",
       description: "An interactive platform for digital artists to showcase and sell their artwork.",
       tech: ["React.js", "Canvas", "API"],
-      demoLink: "#",
-      codeLink: "#",
+      demoLink: "https://direction-art-gallery.vercel.app/",
+      codeLink: "",
     },
     {
       title: "FemPlan",
       description: "A task manager app for women that tracks menstrual cycles, diet, and more.",
       tech: ["Flask", "Bootstrap", "Python"],
-      demoLink: "#",
+      demoLink: "https://femplan-feminine-glory.onrender.com/",
       codeLink: "#",
     },
     {
