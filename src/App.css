@@ -121,8 +121,7 @@ section {
 }
 
 /* Canvas Styles */
-#splash-cursor,
-#meta-balls {
+#splash-cursor {
   position: fixed;
   top: 0;
   left: 0;
@@ -150,27 +149,7 @@ section {
   transition: width 0.3s, height 0.3s;
 }
 
-/* Navigation */
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(10px);
-  z-index: 1000;
-  padding: 15px 0;
-  border-bottom: 1px solid var(--border-color);
-}
 
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
 
 .logo {
   font-family: "Playfair Display", serif;
@@ -646,11 +625,12 @@ section {
 .memberships-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 30px;
+  gap: 100px;
 }
 
 .membership-card {
   text-align: center;
+  
 }
 
 .membership-icon {
@@ -662,6 +642,11 @@ section {
 /* Contact Section */
 .contact-container {
   display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 20px;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
 }

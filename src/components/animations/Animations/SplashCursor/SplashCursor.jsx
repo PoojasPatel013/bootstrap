@@ -1,6 +1,3 @@
-/*
-	Installed from https://reactbits.dev/default/
-*/
 
 "use client";
 import { useEffect, useRef } from "react";
