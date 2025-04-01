@@ -3,6 +3,7 @@ import './app.css';
 import Header from './header';
 import SplashCursor from './components/animations/Animations/SplashCursor/SplashCursor';
 import MetaBalls from './components/animations/Animations/MetaBalls/MetaBalls';
+import Lightning from './components/animations/Backgrounds/Lightning/Lightning';
 import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
@@ -18,6 +19,7 @@ function App() {
   return (
     <div className="app">
       {/* Background Animations */}
+      <Lightning/>
       <SplashCursor />
       {/* <MetaBalls /> */}
       
