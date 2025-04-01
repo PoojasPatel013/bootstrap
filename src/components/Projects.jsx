@@ -51,6 +51,13 @@ export default function Projects() {
       tech: ["Angular", "TypeScript", "API"],
       demoLink: "#",
       codeLink: "#",
+    },
+    {
+      title: "NutriPlanner",
+      description: "A diet and nutrition planner that helps users track their meals and nutritional intake.",
+      tech: ["ReactJS", "Node.js", "express.js", "MongoDB"],
+      demoLink: "#",
+      codeLink: "#",
     }
   ]
 
