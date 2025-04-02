@@ -14,13 +14,13 @@ export default function Footer() {
           <a href="#">Contact</a>
         </nav>
         <div className="footer-social">
-              <a href="mailto:pooja@example.com">
+              <a href="mailto:poojaspatel1375@gmail.com">
                 <i className="fas fa-envelope"></i>
               </a>
-              <a href="https://linkedin.com/in/">
+              <a href="https://www.linkedin.com/in/pooja-p-77329933b/">
                 <i className="fab fa-linkedin"></i>
               </a>
-              <a href="https://github.com/">
+              <a href="https://github.com/PoojasPatel013">
                 <i className="fab fa-github"></i>
               </a>
             </div>

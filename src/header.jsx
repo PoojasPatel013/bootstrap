@@ -41,12 +41,12 @@ export default function Header() {
           <nav>
             <ul className={`nav-links ${isMenuOpen ? "active" : ""}`}>
               <li>
-                <a href="#about" onClick={closeMenu}>
+                <a href="About.jsx" onClick={closeMenu}>
                   About
                 </a>
               </li>
               <li>
-                <a href="#expertise" onClick={closeMenu}>
+                <a href="./Skills" onClick={closeMenu}>
                   Expertise
                 </a>
               </li>
@@ -69,10 +69,10 @@ export default function Header() {
           </nav>
 
           <div className="social-icons">
-            <a href="https://linkedin.com/in/" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/pooja-p-77329933b/" target="_blank" rel="noreferrer">
               <i className="fab fa-linkedin-in"></i>
             </a>
-            <a href="https://twitter.com/" target="_blank" rel="noreferrer">
+            <a href="https://x.com/PoojaPatel55629" target="_blank" rel="noreferrer">
               <i className="fab fa-twitter"></i>
             </a>
           </div>

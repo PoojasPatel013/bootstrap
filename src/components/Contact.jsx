@@ -40,7 +40,7 @@ export default function Contact() {
   return (
     <section id="contact" className="contact-section">
       <div className="container">
-        <h2 className="section-title contact-title">Contact</h2>
+        <h2 style={{color: "black"}} className="section-title contact-title"  >Contact</h2>
 
         <div className="contact-content">
           <div className="contact-info">
@@ -56,7 +56,7 @@ export default function Contact() {
                 </div>
                 <div className="method-details">
                   <h4>Email</h4>
-                  <a href="mailto:contact@example.com">[email protected]</a>
+                  <a href="mailto:poojaspatel1375@gmail.com">[email protected]</a>
                 </div>
               </div>
 
@@ -66,8 +66,8 @@ export default function Contact() {
                 </div>
                 <div className="method-details">
                   <h4>LinkedIn</h4>
-                  <a href="https://linkedin.com/in/" target="_blank" rel="noreferrer">
-                    linkedin.com/in/
+                  <a href="https://www.linkedin.com/in/pooja-p-77329933b/" target="_blank" rel="noreferrer">
+                    linkedin.com
                   </a>
                 </div>
               </div>
@@ -78,21 +78,21 @@ export default function Contact() {
                 </div>
                 <div className="method-details">
                   <h4>Location</h4>
-                  <p>Mumbai, India</p>
+                  <p>Vadodara, India</p>
                 </div>
               </div>
             </div>
 
             <div className="social-links">
-              <a href="https://linkedin.com/in/" className="social-link" target="_blank" rel="noreferrer">
-                <i className="fab fa-linkedin-in"></i>
-                <span>LinkedIn</span>
+              <a href="https://stackoverflow.com/users/29349305/pooja-patel" className="social-link" target="_blank" rel="noreferrer">
+                <i className="fa-brands fa-stack-overflow"></i>
+                <span>StackOverflow</span>
               </a>
-              <a href="https://twitter.com/" className="social-link" target="_blank" rel="noreferrer">
-                <i className="fab fa-twitter"></i>
-                <span>Twitter</span>
+              <a href="https://developers.google.com/profile/u/103599152646825029853/edit?utm_source=developer.android.com" className="social-link" target="_blank" rel="noreferrer">
+                <i className="fab fa-google"></i>
+                <span>Google</span>
               </a>
-              <a href="https://instagram.com/" className="social-link" target="_blank" rel="noreferrer">
+              <a href="https://instagram.com/fiery.pooja" className="social-link" target="_blank" rel="noreferrer">
                 <i className="fab fa-instagram"></i>
                 <span>Instagram</span>
               </a>

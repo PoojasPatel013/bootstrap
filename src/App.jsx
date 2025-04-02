@@ -35,7 +35,7 @@ function App() {
         <Experience />
         <Certifications />
         <EducationAchievements/>
-        <ServicesSection/>
+        {/* <ServicesSection/> */}
         <Memberships />
         <Contact />
       </main>

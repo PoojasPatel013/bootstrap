@@ -10,7 +10,7 @@
 // )
 import React from "react"
 import ReactDOM from "react-dom/client"
-import App from "./app"
+import App from "./App"
 
 // Wait for the DOM to be fully loaded
 document.addEventListener("DOMContentLoaded", () => {
