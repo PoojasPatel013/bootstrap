@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { Code, Cloud, Shield, Database, Braces } from "lucide-react"
 import "./Services.css"
+import FlowingMenu from "./animations/Components/FlowingMenu/FlowingMenu"
 
 const services = [
   {
@@ -81,7 +82,7 @@ export default function ServicesSection() {
             ))}
           </div>
 
-          <div className="tab-content mt-16">
+          <FlowingMenu className="tab-content mt-16">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
               <div className="service-content">
                 <h3 className="text-3xl font-bold mb-6">{activeService.title}</h3>
@@ -109,7 +110,7 @@ export default function ServicesSection() {
                 </div>
               </div>
             </div>
-          </div>
+          </FlowingMenu>
         </div>
       </div>
     </section>
