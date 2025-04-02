@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import "./contact.css"
+import "./Contact.css"
 
 export default function Contact() {
   const [formData, setFormData] = useState({
