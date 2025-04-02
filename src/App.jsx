@@ -14,6 +14,7 @@ import EducationAchievements from './components/EducationAchievements';
 import Memberships from './components/Memberships';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import ServicesSection from './components/Services';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
         <Experience />
         <Certifications />
         <EducationAchievements/>
+        <ServicesSection/>
         <Memberships />
         <Contact />
       </main>
