@@ -1,44 +1,52 @@
 /* Import Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Georgia&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Cinzel:wght@400;500;600;700&family=Tangerine:wght@400;700&display=swap");
 
 /* Import Font Awesome */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
 
 /* Base Styles */
 :root {
-  --primary-color: #ffffff;
-  --secondary-color: #f1f1f1;
-  --background-color: #000000;
-  --text-color: #ffffff;
-  --accent-color: #333333;
-  --card-bg: #111111;
-  --border-color: #333333;
+  --primary-color: #000000;
+  --secondary-color: #e5e5e5;
+  --background-color: #ffffff;
+  --text-color: #0d0d0d;
+  --accent-color: #1b1a1a;
+  --accent-color-light: #4d4f52;
+  --card-bg: #e3e3e3;
+  --border-color: #000000;
   --animation-speed: 0.3s;
+  --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+/* Fonts */
+--font-body: "Georgia", serif;
+--font-heading: "Cinzel", serif;
+--font-accent: "Playfair Display", serif;
+--font-script: "Tangerine", cursive;
+--font-elegant: "Cormorant Garamond", serif;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 80px;
+scroll-behavior: smooth;
+scroll-padding-top: 80px;
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-body);
   background-color: var(--background-color);
-  color: var(--text-color);
-  line-height: 1.6;
+  color: white;
+  line-height: 1.8;
   overflow-x: hidden;
-  cursor: none;
 }
 
 a {
   text-decoration: none;
-  color: var(--text-color);
+  color: whitesmoke;
   transition: all var(--animation-speed) ease;
 }
 
@@ -58,14 +66,13 @@ section {
 }
 
 .section-title {
-  font-family: "Playfair Display", serif;
+  font-family: var(--font-heading);
   font-size: 2.5rem;
+  font-weight: 700;
   margin-bottom: 50px;
-  text-align: center;
+  color: whitesmoke;
   position: relative;
   display: inline-block;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .section-title::after {
@@ -73,25 +80,61 @@ section {
   position: absolute;
   bottom: -10px;
   left: 0;
-  width: 100%;
+  width: 60px;
   height: 2px;
-  background-color: var(--primary-color);
+  background-color: whitesmoke;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color:beige;
+  line-height: 1.3;
 }
 
+.subtitle {
+  font-family: var(--font-script);
+  font-size: 2rem;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+.elegant-text {
+  font-family: var(--font-elegant);
+  font-style: italic;
+  line-height: 1.6;
+}
 .btn {
   display: inline-block;
   padding: 12px 24px;
-  background-color: transparent;
-  border: 2px solid var(--primary-color);
-  color: var(--text-color);
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  font-family: var(--font-accent);
   font-weight: 600;
-  text-transform: uppercase;
   letter-spacing: 1px;
-  cursor: none;
+  border: 2px solid var(--primary-color);
+  border-radius: 0;
+  cursor: pointer;
   transition: all var(--animation-speed) ease;
   position: relative;
   overflow: hidden;
-  z-index: 1;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+.btn-outline {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.btn-outline:hover {
+  background-color: var(--primary-color);
+  color: var(--background-color);
 }
 
 .btn::before {
@@ -135,51 +178,42 @@ section {
   z-index: 9999;
 }
 
-/* Custom Cursor */
-.custom-cursor {
-  position: fixed;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: var(--primary-color);
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  mix-blend-mode: difference;
-  z-index: 9999;
-  transition: width 0.3s, height 0.3s;
-}
-
-
-
 .logo {
-  font-family: "Playfair Display", serif;
-  font-size: 2rem;
+  font-family: var(--font-script);
+  font-size: 2.5rem;
   font-weight: 700;
   color: var(--primary-color);
-  cursor: none;
+  transition: all 0.3s ease;
 }
 
+.logo:hover {
+  color: var(--accent-color);
+}
 .nav-links {
   display: flex;
   gap: 30px;
 }
-
 .nav-links a {
+  font-family: var(--font-accent);
   font-weight: 500;
   position: relative;
   padding: 5px 0;
-  cursor: none;
+  font-size: 1rem;
+  color: var(--primary-color);
 }
-
 .nav-links a::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -2px;
   left: 0;
   width: 0;
-  height: 2px;
+  height: 1px;
   background-color: var(--primary-color);
-  transition: width var(--animation-speed) ease;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--accent-color);
 }
 
 .nav-links a:hover::after {
@@ -199,9 +233,7 @@ section {
   background-color: var(--primary-color);
   transition: all var(--animation-speed) ease;
 }
-/* Add these global styles to your existing CSS */
 
-/* General section styling */
 section {
   padding: 4rem 0;
   position: relative;
@@ -234,8 +266,16 @@ section {
 }
 
 /* Card styling */
-.card-content {
-  padding: 1.5rem;
+.card {
+  background-color: black;
+  border: 1px solid var(--border-color);
+  padding: 30px;
+  transition: transform var(--animation-speed) ease, box-shadow var(--animation-speed) ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--box-shadow);
 }
 
 /* Grid layouts */
@@ -367,36 +407,42 @@ section {
 .about-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  gap: 60px;
   align-items: center;
+  font-size: larger;
+  color: white;
 }
 
 .about-text p {
-  margin-bottom: 20px;
-  font-size: 1.1rem;
+  margin-bottom: 30px;
+  font-size: larger;
+  background-color: white;
 }
 
 .about-details {
-  margin-top: 30px;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   gap: 15px;
+  color: white;
+  font-size: larger;
 }
 
 .detail {
   display: flex;
+ color: white;
   align-items: center;
   gap: 10px;
 }
 
 .detail i {
-  font-size: 1.2rem;
-  color: var(--primary-color);
+  font-size: 12rem;
+  color: wheat
 }
 
 /* Pixel Card */
 .pixel-card {
-  background-color: var(--card-bg);
+  background-color: black;
   border: 1px solid var(--border-color);
   border-radius: 10px;
   overflow: hidden;
@@ -446,6 +492,7 @@ section {
   font-size: 1.5rem;
   margin-bottom: 20px;
   text-align: center;
+  text-decoration-color: #1b1a1a;
 }
 
 .skills-grid {
@@ -455,7 +502,7 @@ section {
 }
 
 .skill-item {
-  background-color: var(--card-bg);
+  background-color: black;
   border: 1px solid var(--border-color);
   border-radius: 10px;
   padding: 20px;
@@ -470,7 +517,7 @@ section {
 .skill-icon {
   font-size: 2rem;
   margin-bottom: 10px;
-  color: var(--primary-color);
+  color: whitesmoke;
 }
 
 /* Projects Section */
@@ -487,6 +534,7 @@ section {
 .project-card h3 {
   font-size: 1.3rem;
   margin-bottom: 10px;
+
 }
 
 .project-card p {
@@ -502,7 +550,7 @@ section {
 }
 
 .project-tech span {
-  background-color: var(--accent-color);
+  background-color: brown;
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 0.8rem;
@@ -528,7 +576,7 @@ section {
   transform: translateX(-50%);
   width: 2px;
   height: 100%;
-  background-color: var(--border-color);
+  background-color: whitesmoke;
 }
 
 .timeline-item {
@@ -544,7 +592,7 @@ section {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: var(--primary-color);
+  background-color: whitesmoke;
   z-index: 1;
 }
 
@@ -578,12 +626,13 @@ section {
 .certification-card {
   text-align: center;
   height: 100%;
+  color: var(--border-color);
 }
 
 .cert-icon {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: var(--primary-color);
+  color:whitesmoke;
 }
 
 /* Education & Achievements Section */
@@ -618,7 +667,7 @@ section {
 .achievement-icon {
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: var(--primary-color);
+  color: whitesmoke;
 }
 
 /* Memberships Section */
@@ -636,98 +685,7 @@ section {
 .membership-icon {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: var(--primary-color);
-}
-
-/* Contact Section */
-.contact-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 50px;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 50px 20px;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
-}
-
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.contact-item i {
-  font-size: 1.5rem;
-  color: var(--primary-color);
-}
-
-.form-group {
-  margin-bottom: 20px;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: 500;
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 12px;
-  background-color: var(--background-color);
-  border: 1px solid var(--border-color);
-  color: var(--text-color);
-  border-radius: 5px;
-  font-family: "Montserrat", sans-serif;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: var(--primary-color);
-}
-
-/* Footer */
-footer {
-  background-color: var(--card-bg);
-  padding: 50px 0;
-  border-top: 1px solid var(--border-color);
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-logo {
-  font-family: "Playfair Display", serif;
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--primary-color);
-}
-
-.footer-social {
-  display: flex;
-  gap: 20px;
-}
-
-.footer-social a {
-  font-size: 1.5rem;
-  color: var(--text-color);
-  transition: color var(--animation-speed) ease;
-}
-
-.footer-social a:hover {
-  color: var(--primary-color);
+  color: whitesmoke;
 }
 
 /* Pixel Canvas */
@@ -737,17 +695,10 @@ footer {
   display: block;
 }
 
-/* Metaballs Container */
-.metaballs-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
 
 /* Media Queries */
 @media (max-width: 992px) {
   .about-content,
-  .contact-container,
   .two-column-grid {
     grid-template-columns: 1fr;
   }
@@ -895,4 +846,10 @@ section.animate {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primary-color);
 }
+
+
+
+
+
+
 

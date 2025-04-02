@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState, useRef } from "react"
-
+import "./Hero.css"
 export default function Hero() {
   const [displayText, setDisplayText] = useState("")
   const typewriterRef = useRef(null)
@@ -49,25 +49,25 @@ export default function Hero() {
   }, [])
 
   return (
-    <section id="hero">
+    <section id="hero" className="min-h-screen flex items-center justify-center">
       <div className="container">
-        <div className="hero-content">
-          <h1 className="glitch" data-text="POOJA PATEL">
+        <div className="hero-content text-center text-white">
+          <h1 className="glitch text-5xl md:text-7xl font-bold mb-6" data-text="POOJA PATEL">
             POOJA PATEL
           </h1>
-          <div className="typewriter">
+          <div className="typewriter text-xl md:text-2xl mb-8">
             <span id="typewriter-text">{displayText}</span>
             <span className="cursor">|</span>
           </div>
-          <div className="hero-links">
+          <div className="hero-links flex flex-wrap justify-center gap-4">
             <a href="mailto:poojaspatel1375@gmail.com" className="btn">
-              <i className="fas fa-envelope"></i> Email
+              <i className="fas fa-envelope mr-2"></i> Email
             </a>
             <a href="https://linkedin.com/in/" className="btn">
-              <i className="fab fa-linkedin"></i> LinkedIn
+              <i className="fab fa-linkedin mr-2"></i> LinkedIn
             </a>
             <a href="https://github.com/PoojasPatel013" className="btn">
-              <i className="fab fa-github"></i> GitHub
+              <i className="fab fa-github mr-2"></i> GitHub
             </a>
           </div>
         </div>

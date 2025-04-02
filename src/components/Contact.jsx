@@ -1,110 +1,145 @@
 "use client"
 
-import { useState } from 'react';
-import PixelCard from './animations/Components/PixelCard/PixelCard';
+import { useState } from "react"
+import "./contact.css"
 
 export default function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  })
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
+    const { name, value } = e.target
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
-    }));
-  };
+      [name]: value,
+    }))
+  }
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    
+    e.preventDefault()
+
     // Here you would typically send the form data to a server
-    console.log('Form submitted:', formData);
-    
+    console.log("Form submitted:", formData)
+
     // Reset form
     setFormData({
-      name: '',
-      email: '',
-      message: ''
-    });
-    
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    })
+
     // Show success message
-    alert('Thank you for your message! I will get back to you soon.');
-  };
+    alert("Thank you for your message! I will get back to you soon.")
+  }
 
   return (
-    <section id="contact">
+    <section id="contact" className="contact-section">
       <div className="container">
-        <h2 className="section-title">Contact Me</h2>
-        <div className="contact-container">
+        <h2 className="section-title contact-title">Contact</h2>
+
+        <div className="contact-content">
           <div className="contact-info">
-            <div className="contact-item">
-              <i className="fas fa-envelope"></i>
-              <a href="mailto:poojaspatel1375@gmail.com">poojaspatel1375@gmail.com</a>
+            <h3>Let's Work Together</h3>
+            <p className="elegant-text">
+              Interested in working together? I'd love to hear about your financial needs and how I can help.
+            </p>
+
+            <div className="contact-methods">
+              <div className="contact-method">
+                <div className="method-icon">
+                  <i className="fas fa-envelope"></i>
+                </div>
+                <div className="method-details">
+                  <h4>Email</h4>
+                  <a href="mailto:contact@example.com">[email protected]</a>
+                </div>
+              </div>
+
+              <div className="contact-method">
+                <div className="method-icon">
+                  <i className="fab fa-linkedin-in"></i>
+                </div>
+                <div className="method-details">
+                  <h4>LinkedIn</h4>
+                  <a href="https://linkedin.com/in/" target="_blank" rel="noreferrer">
+                    linkedin.com/in/
+                  </a>
+                </div>
+              </div>
+
+              <div className="contact-method">
+                <div className="method-icon">
+                  <i className="fas fa-map-marker-alt"></i>
+                </div>
+                <div className="method-details">
+                  <h4>Location</h4>
+                  <p>Mumbai, India</p>
+                </div>
+              </div>
             </div>
-            <div className="contact-item">
-              <i className="fas fa-phone"></i>
-              <a href="tel:+">+91 </a>
-            </div>
-            <div className="contact-item">
-              <i className="fab fa-linkedin"></i>
-              <a href="https://linkedin.com/in/" target="_blank" rel="noreferrer">LinkedIn</a>
-            </div>
-            <div className="contact-item">
-              <i className="fab fa-github"></i>
-              <a href="https://github.com/PoojasPatel013" target="_blank" rel="noreferrer">GitHub</a>
-            </div>
-            <div className="contact-item">
-              <i className="fas fa-map-marker-alt"></i>
-              <span>Vadodara, Gujarat, India</span>
+
+            <div className="social-links">
+              <a href="https://linkedin.com/in/" className="social-link" target="_blank" rel="noreferrer">
+                <i className="fab fa-linkedin-in"></i>
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://twitter.com/" className="social-link" target="_blank" rel="noreferrer">
+                <i className="fab fa-twitter"></i>
+                <span>Twitter</span>
+              </a>
+              <a href="https://instagram.com/" className="social-link" target="_blank" rel="noreferrer">
+                <i className="fab fa-instagram"></i>
+                <span>Instagram</span>
+              </a>
             </div>
           </div>
-          
-          <PixelCard className="contact-form">
-            <div className="card-content">
-              <form id="contact-form" onSubmit={handleSubmit}>
-                <div className="form-group">
-                  <label htmlFor="name">Name</label>
-                  <input 
-                    type="text" 
-                    id="name" 
-                    name="name" 
-                    value={formData.name}
-                    onChange={handleChange}
-                    required 
-                  />
-                </div>
-                <div className="form-group">
-                  <label htmlFor="email">Email</label>
-                  <input 
-                    type="email" 
-                    id="email" 
-                    name="email" 
-                    value={formData.email}
-                    onChange={handleChange}
-                    required 
-                  />
-                </div>
-                <div className="form-group">
-                  <label htmlFor="message">Message</label>
-                  <textarea 
-                    id="message" 
-                    name="message" 
-                    rows="5" 
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                  ></textarea>
-                </div>
-                <button type="submit" className="btn">Send Message</button>
-              </form>
-            </div>
-          </PixelCard>
+
+          <div className="contact-form-container">
+            <form id="contact-form" onSubmit={handleSubmit}>
+              <div className="form-group">
+                <label htmlFor="name">Name</label>
+                <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required />
+              </div>
+              <div className="form-group">
+                <label htmlFor="email">Email</label>
+                <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required />
+              </div>
+              <div className="form-group">
+                <label htmlFor="subject">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" className="submit-button">
+                Send Message <i className="fas fa-paper-plane"></i>
+              </button>
+            </form>
+            <div className="accent-dot"></div>
+          </div>
         </div>
       </div>
     </section>
-  );
+  )
 }
+

@@ -25,7 +25,7 @@ export default function Header() {
   }
 
   return (
-    <header className={`site-header ${scrolled ? "scrolled" : ""}`}>
+    <header className={`header ${scrolled ? "scrolled" : ""}`}>
       <div className="container">
         <div className="header-content">
           <a href="#hero" className="logo">
@@ -46,28 +46,18 @@ export default function Header() {
                 </a>
               </li>
               <li>
-                <a href="#skills" onClick={closeMenu}>
-                  Skills
+                <a href="#expertise" onClick={closeMenu}>
+                  Expertise
                 </a>
               </li>
               <li>
-                <a href="#projects" onClick={closeMenu}>
-                  Projects
+                <a href="#credentials" onClick={closeMenu}>
+                  Credentials
                 </a>
               </li>
               <li>
-                <a href="#experience" onClick={closeMenu}>
-                  Experience
-                </a>
-              </li>
-              <li>
-                <a href="#education-achievements" onClick={closeMenu}>
-                  Education
-                </a>
-              </li>
-              <li>
-                <a href="#certifications" onClick={closeMenu}>
-                  Certifications
+                <a href="#services" onClick={closeMenu}>
+                  Services
                 </a>
               </li>
               <li>
@@ -77,6 +67,15 @@ export default function Header() {
               </li>
             </ul>
           </nav>
+
+          <div className="social-icons">
+            <a href="https://linkedin.com/in/" target="_blank" rel="noreferrer">
+              <i className="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank" rel="noreferrer">
+              <i className="fab fa-twitter"></i>
+            </a>
+          </div>
         </div>
       </div>
     </header>

@@ -1,0 +1,58 @@
+/* Custom cursor styles */
+body {
+    cursor: none;
+  }
+  
+  a,
+  button,
+  input[type="submit"],
+  .btn,
+  [role="button"] {
+    cursor: none;
+  }
+  
+  .custom-cursor {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    transition: width 0.2s, height 0.2s;
+  }
+  
+  .custom-cursor.pointer {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 102, 255, 0.5);
+  }
+  
+  @media (max-width: 768px) {
+    .custom-cursor {
+      display: none;
+    }
+  }
+  
+  
+  /* For mobile devices, hide the custom cursor */
+  @media (max-width: 768px) {
+    body {
+      cursor: auto;
+    }
+  
+    a,
+    button,
+    input[type="submit"],
+    .btn,
+    [role="button"] {
+      cursor: pointer;
+    }
+  
+    .custom-cursor {
+      display: none;
+    }
+  }
+  
+  
