@@ -1,5 +1,5 @@
 import React from 'react';
-import './app.css';
+import './App.css';
 import Header from './header';
 import SplashCursor from './components/animations/Animations/SplashCursor/SplashCursor';
 import MetaBalls from './components/animations/Animations/MetaBalls/MetaBalls';
