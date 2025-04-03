@@ -57,11 +57,11 @@
 }
 
 .project-tech span {
-  background-color: #ddd;
+  background-color: #161616;
   padding: 4px 8px;
   border-radius: 12px;
   font-size: 0.9rem;
-  color: black;
+  color: rgb(249, 244, 244);
 }
 
 .project-links {
@@ -71,8 +71,8 @@
 }
 
 .project-links .btn-small {
-  background-color: #3498db;
-  color: white;
+  background-color: #171717;
+  color: rgb(204, 204, 204);
   padding: 8px 12px;
   border-radius: 4px;
   text-decoration: none;
@@ -81,7 +81,7 @@
 }
 
 .project-links .btn-small:hover {
-  background-color: #2980b9;
+  background-color: #0b3b5c;
 }
 
 .pixel-card::before {
@@ -90,7 +90,7 @@
   inset: 0;
   margin: auto;
   aspect-ratio: 1;
-  background: radial-gradient(circle, #09090b, transparent 85%);
+  background: radial-gradient(circle, #171719, transparent 85%);
   opacity: 0;
   transition: opacity 800ms cubic-bezier(0.5, 1, 0.89, 1);
 }

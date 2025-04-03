@@ -27,8 +27,11 @@ export default function Header() {
           <a href="#hero" className="logo">
             PP
           </a>
-          <p style={{ color: "black", fontFamily: "'Dancing Script', cursive",fontSize: "1.5rem", fontWeight: "bold"}}>Regal</p>
-
+          <p
+            style={{ color: "black", fontFamily: "'Dancing Script', cursive", fontSize: "1.5rem", fontWeight: "bold" }}
+          >
+            Regal
+          </p>
 
           <div className={`menu-toggle ${isMenuOpen ? "active" : ""}`} onClick={toggleMenu}>
             <div className="bar"></div>
@@ -39,27 +42,27 @@ export default function Header() {
           {/* <nav>
             <ul className={`nav-links ${isMenuOpen ? "active" : ""}`}>
               <li>
-                <a href="About.jsx" onClick={closeMenu}>
+                <a href="#about" onClick={() => setIsMenuOpen(false)}>
                   About
                 </a>
               </li>
               <li>
-                <a href="./Skills" onClick={closeMenu}>
+                <a href="#skills" onClick={() => setIsMenuOpen(false)}>
                   Expertise
                 </a>
               </li>
               <li>
-                <a href="#credentials" onClick={closeMenu}>
+                <a href="#education-experience" onClick={() => setIsMenuOpen(false)}>
                   Credentials
                 </a>
               </li>
               <li>
-                <a href="#services" onClick={closeMenu}>
-                  Services
+                <a href="#achievements" onClick={() => setIsMenuOpen(false)}>
+                  Achievements
                 </a>
               </li>
               <li>
-                <a href="#contact" onClick={closeMenu}>
+                <a href="#contact" onClick={() => setIsMenuOpen(false)}>
                   Contact
                 </a>
               </li>
