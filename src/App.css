@@ -38,12 +38,6 @@ body {
   background-color: #f8f8f8;
 }
 
-/* Default styles for desktop */
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
 /* Responsive Design */
 @media (max-width: 1024px) {
   .container {
@@ -110,11 +104,6 @@ ul {
   list-style: none;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
 
 section {
   padding: 100px 0;
