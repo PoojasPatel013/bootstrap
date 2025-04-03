@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import Header from './header';
 import SplashCursor from './components/animations/Animations/SplashCursor/SplashCursor';
-import MetaBalls from './components/animations/Animations/MetaBalls/MetaBalls';
 import Lightning from './components/animations/Backgrounds/Lightning/Lightning';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -23,7 +22,6 @@ function App() {
       {/* Background Animations */}
       <Lightning/>
       <SplashCursor />
-      {/* <MetaBalls /> */}
       
       {/* Main Content */}
       <Header />
