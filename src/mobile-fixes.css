@@ -43,3 +43,19 @@
     height: auto;
   }
 }
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .content {
+    padding: 20px;
+  }
+}
