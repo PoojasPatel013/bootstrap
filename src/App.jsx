@@ -26,7 +26,7 @@ function App() {
       {/* Main Content */}
       <Header />
       <main>
-        <Hero />
+        {/* <Hero />
         <About />
         <Skills />
         <Projects />
@@ -34,8 +34,15 @@ function App() {
         <Certifications />
         <EducationAchievements/>
         {/* <ServicesSection/> */}
-        <Memberships />
-        <Contact />
+        {/* <Memberships />
+        <Contact /> */}
+        <main>
+  <h1 style={{ color: "red", textAlign: "center" }}>Main Content Test</h1>
+  <Hero />
+  <About />
+  <Skills />
+</main>
+
       </main>
       <Footer />
     </div>
