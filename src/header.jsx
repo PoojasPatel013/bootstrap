@@ -20,10 +20,6 @@ export default function Header() {
     setIsMenuOpen(!isMenuOpen)
   }
 
-  const closeMenu = () => {
-    setIsMenuOpen(false)
-  }
-
   return (
     <header className={`header ${scrolled ? "scrolled" : ""}`}>
       <div className="container">
@@ -31,6 +27,8 @@ export default function Header() {
           <a href="#hero" className="logo">
             PP
           </a>
+          <p style={{ color: "black", fontFamily: "'Dancing Script', cursive",fontSize: "1.5rem", fontWeight: "bold"}}>Regal</p>
+
 
           <div className={`menu-toggle ${isMenuOpen ? "active" : ""}`} onClick={toggleMenu}>
             <div className="bar"></div>
@@ -38,7 +36,7 @@ export default function Header() {
             <div className="bar"></div>
           </div>
 
-          <nav>
+          {/* <nav>
             <ul className={`nav-links ${isMenuOpen ? "active" : ""}`}>
               <li>
                 <a href="About.jsx" onClick={closeMenu}>
@@ -66,7 +64,7 @@ export default function Header() {
                 </a>
               </li>
             </ul>
-          </nav>
+          </nav> */}
 
           <div className="social-icons">
             <a href="https://www.linkedin.com/in/pooja-p-77329933b/" target="_blank" rel="noreferrer">
