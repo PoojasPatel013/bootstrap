@@ -58,6 +58,20 @@ export default function Projects() {
       tech: ["ReactJS", "Node.js", "express.js", "MongoDB"],
       demoLink: "#",
       codeLink: "#",
+    },
+    {
+      title: "Portfolio Website",
+      description: "A personal portfolio website showcasing my projects and skills.",
+      tech: ["ReactJS", "Tailwind", "EmailJS"],
+      demoLink: "https://poojaxdev.vercel.app",
+      codeLink: "https://github.com/PoojasPatel013/bootstrap"
+    },
+    {
+      title: "Disha Patel- Portfolio",
+      description: "A personal portfolio website showcasing her projects and skills.",
+      tech: ["ReactJS", "Tailwind", "Javascript"],
+      demoLink: "#",
+      codeLink: "#"
     }
   ]
 

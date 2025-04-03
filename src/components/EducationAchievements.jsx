@@ -23,7 +23,7 @@ export default function EducationAchievements() {
 
           {/* Experience Column */}
           <div>
-            <h2 className="section-title mb-6">Experience</h2>
+            <h2 className="section-title mb-6" style={{textAlign: "end"}}>Experience</h2>
             <div className="timeline">
               <div className="timeline-item">
                 <div className="timeline-dot"></div>

@@ -24,9 +24,9 @@ export default function Contact() {
     e.preventDefault()
 
     // Replace with your EmailJS service, template, and public key
-    const serviceID = "your_service_id"
-    const templateID = "your_template_id"
-    const publicKey = "your_public_key"
+    const serviceID = "service_5eb2ei3"
+    const templateID = "template_4xed7d6"
+    const publicKey = "i0cZNf3P11pzPFfLt"
 
     const templateParams = {
       from_name: formData.name,

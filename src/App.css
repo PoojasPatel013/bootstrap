@@ -338,6 +338,7 @@ section {
 .grid {
   display: grid;
   gap: 2rem;
+  justify-items: start;
 }
 
 .grid-cols-1 {
@@ -423,7 +424,7 @@ section {
 }
 
 .hero-content h1 {
-  font-family: "Playfair Display", serif;
+  font-family: "'dancing-script', cursive";
   font-size: 4rem;
   margin-bottom: 20px;
   letter-spacing: 2px;
@@ -519,7 +520,7 @@ section {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background-color: var(--accent-color);
+  background-color: whitesmoke;
   margin: 0 auto 20px;
   position: relative;
   overflow: hidden;
@@ -534,7 +535,7 @@ section {
   font-family: "Playfair Display", serif;
   font-size: 3rem;
   font-weight: 700;
-  color: var(--primary-color);
+  color: whitesmoke;
 }
 
 /* Skills Section */
@@ -641,15 +642,7 @@ section {
 }
 
 .timeline-dot {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: whitesmoke;
-  z-index: 1;
+  display: none;
 }
 
 .timeline-content {
