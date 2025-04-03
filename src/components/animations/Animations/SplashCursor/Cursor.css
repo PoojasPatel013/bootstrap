@@ -1,60 +1,56 @@
 /* Custom cursor styles */
 body {
-    cursor: none;
+  cursor: none;
+}
+
+/* Elements that typically have a pointer cursor */
+a,
+button,
+input[type="submit"],
+.btn,
+[role="button"] {
+  cursor: none;
+}
+
+/* Custom cursor */
+.custom-cursor {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: width 0.2s, height 0.2s, background-color 0.3s;
+  mix-blend-mode: difference; /* Inverts color based on background */
+  background-color: white; /* Default color */
+}
+
+/* Enlarged cursor when hovering over clickable elements */
+.custom-cursor.pointer {
+  width: 20px;
+  height: 20px;
+}
+
+/* Hide cursor on mobile devices */
+@media (max-width: 768px) {
+  body {
+      cursor: auto;
   }
-  
+
   a,
   button,
   input[type="submit"],
   .btn,
   [role="button"] {
-    cursor: none;
-  }
-  
-  .custom-cursor {
-    position: fixed;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: whitesmoke;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    z-index: 9999;
-    transition: width 0.2s, height 0.2s;
-  }
-  
-  .custom-cursor.pointer {
-    width: 20px;
-    height: 20px;
-    background-color: rgba(0, 102, 255, 0.5);
-  }
-  
-  @media (max-width: 768px) {
-    .custom-cursor {
-      display: none;
-    }
-  }
-  
-  
-  /* For mobile devices, hide the custom cursor */
-  @media (max-width: 768px) {
-    body {
-      cursor: auto;
-    }
-  
-    a,
-    button,
-    input[type="submit"],
-    .btn,
-    [role="button"] {
       cursor: pointer;
-    }
-  
-    .custom-cursor {
-      display: none;
-    }
   }
-  
+
+  .custom-cursor {
+      display: none;
+  }
+}
+
   
 
 

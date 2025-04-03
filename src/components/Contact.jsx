@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import emailjs from "emailjs-com"
 import "./Contact.css"
 
 export default function Contact() {
@@ -22,25 +23,42 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    // Here you would typically send the form data to a server
-    console.log("Form submitted:", formData)
+    // Replace with your EmailJS service, template, and public key
+    const serviceID = "your_service_id"
+    const templateID = "your_template_id"
+    const publicKey = "your_public_key"
 
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    })
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      subject: formData.subject,
+      message: formData.message,
+    }
 
-    // Show success message
-    alert("Thank you for your message! I will get back to you soon.")
+    emailjs
+      .send(serviceID, templateID, templateParams, publicKey)
+      .then((response) => {
+        console.log("Email sent successfully:", response)
+        alert("Thank you for your message! I will get back to you soon.")
+
+        // Reset form
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+        })
+      })
+      .catch((error) => {
+        console.error("Failed to send email:", error)
+        alert("Something went wrong. Please try again later.")
+      })
   }
 
   return (
     <section id="contact" className="contact-section">
       <div className="container">
-        <h2 style={{color: "black"}} className="section-title contact-title"  >Contact</h2>
+        <h2 style={{color: "whitesmoke"}} className="section-title contact-title">Contact</h2>
 
         <div className="contact-content">
           <div className="contact-info">
@@ -142,4 +160,3 @@ export default function Contact() {
     </section>
   )
 }
-

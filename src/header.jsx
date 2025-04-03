@@ -30,7 +30,7 @@ export default function Header() {
           <p
             style={{ color: "black", fontFamily: "'Dancing Script', cursive", fontSize: "1.5rem", fontWeight: "bold" }}
           >
-            Regal
+            Architecting Clouds, Crafting Regal Stories
           </p>
 
           <div className={`menu-toggle ${isMenuOpen ? "active" : ""}`} onClick={toggleMenu}>

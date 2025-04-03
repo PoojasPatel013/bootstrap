@@ -63,7 +63,7 @@ export default function Hero() {
             <a href="mailto:poojaspatel1375@gmail.com" className="btn">
               <i className="fas fa-envelope mr-2"></i> Email
             </a>
-            <a href="https://linkedin.com/in/" className="btn">
+            <a href="https://www.linkedin.com/in/pooja-p-77329933b/" className="btn">
               <i className="fab fa-linkedin mr-2"></i> LinkedIn
             </a>
             <a href="https://github.com/PoojasPatel013" className="btn">
