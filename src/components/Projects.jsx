@@ -69,9 +69,16 @@ export default function Projects() {
     {
       title: "Disha Patel- Portfolio",
       description: "A personal portfolio website showcasing her projects and skills.",
-      tech: ["ReactJS", "Tailwind", "Javascript"],
+      tech: ["Wordpress", "No-Code"],
       demoLink: "#",
       codeLink: "#"
+    },
+    {
+      title: "Escape Room",
+      description: "A thrilling escape room game where players solve puzzles to escape.",
+      tech: ["Socket.io", "SQLite", "API"],
+      demoLink: "#",
+      codeLink: "#",
     }
   ]
 

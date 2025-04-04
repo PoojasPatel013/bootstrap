@@ -32,10 +32,10 @@ input[type="submit"],
   height: 20px;
 }
 
-/* Hide cursor on mobile devices */
-@media (max-width: 768px) {
+/* Hide default cursor and show custom cursor on desktop */
+@media (min-width: 769px) {
   body {
-      cursor: auto;
+    cursor: none;
   }
 
   a,
@@ -43,67 +43,25 @@ input[type="submit"],
   input[type="submit"],
   .btn,
   [role="button"] {
-      cursor: pointer;
+    cursor: none;
   }
 
   .custom-cursor {
-      display: none;
+    display: block;
+  }
+
+  .splash-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
   }
 }
 
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .  
-body {
-  cursor: none;
-}
-
-a,
-button,
-input[type="submit"],
-.btn,
-[role="button"] {
-  cursor: none;
-}
-
-.custom-cursor {
-  position: fixed;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: var(--accent-color);
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  z-index: 9999;
-  transition: width 0.2s, height 0.2s;
-}
-
-.custom-cursor.pointer {
-  width: 20px;
-  height: 20px;
-  background-color: rgba(0, 102, 255, 0.5);
-}
-
-@media (max-width: 768px) {
-  .custom-cursor {
-    display: none;
-  }
-}
-
-
+/* Show default cursor on mobile/tablet devices */
 @media (max-width: 768px) {
   body {
     cursor: auto;
@@ -117,18 +75,14 @@ input[type="submit"],
     cursor: pointer;
   }
 
+  /* Hide custom cursor on mobile */
   .custom-cursor {
+    display: none;
+  }
+
+  /* Hide splash cursor on mobile */
+  .splash-cursor {
     display: none;
   }
 }
 
-.splash-cursor {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 1; 
-}
-*/
