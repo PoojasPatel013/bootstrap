@@ -64,7 +64,7 @@ export default function Contact() {
           <div className="contact-info">
             <h3>Let's Work Together</h3>
             <p className="elegant-text">
-              Interested in working together? I'd love to hear about your financial needs and how I can help.
+              Interested in working together? I'd love to hear about your ideas and innovative insights and how I can help.
             </p>
 
             <div className="contact-methods">
