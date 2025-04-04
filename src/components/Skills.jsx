@@ -1,3 +1,6 @@
+import { SiLatex } from 'react-icons/si';
+import { SiTypescript } from 'react-icons/si';
+import { SiKotlin } from 'react-icons/si';
 export default function Skills() {
     const skillCategories = [
       {
@@ -7,8 +10,6 @@ export default function Skills() {
           { name: "HTML", icon: "fab fa-html5" },
           { name: "CSS", icon: "fab fa-css3-alt" },
           { name: "JavaScript", icon: "fab fa-js" },
-          {name: "typeScript", icon: "fab fa-js-square"},
-          {name: "kotlin", icon: "fab fa-java"},
           {name: "python", icon: "fab fa-python"},
         ],
       },
@@ -50,9 +51,10 @@ export default function Skills() {
           { name: "Git", icon: "fab fa-git-alt" },
           { name: "Kali Linux", icon: "fas fa-shield-alt" },
           { name: "WordPress", icon: "fab fa-wordpress" },
-          {name: "Cisco Packet Tracer", icon: "fas fa-network-wired"},
+          { name: "Cisco Packet Tracer", icon: "fas fa-network-wired"},
           { name: "Postman", icon: "fas fa-paper-plane" },
           { name: "Microsoft excel", icon: "fas fa-table" },
+          { name: "LaTeX", iconComponent: <SiLatex /> } ,
         ],
       },
       {
@@ -68,6 +70,8 @@ export default function Skills() {
         skills: [
           { name: "Android", icon: "fab fa-android" },
           { name: "React Native", icon: "fab fa-react" },
+          {name: "Kotlin", iconComponent: <SiKotlin />},
+          {name: "TypeScript", iconComponent: <SiTypescript />},
         ],
       }
     ]
@@ -84,8 +88,13 @@ export default function Skills() {
                   {category.skills.map((skill, skillIndex) => (
                     <div className="skill-item" key={skillIndex}>
                       <div className="skill-icon">
+                        {skill.iconComponent ? (
+                          skill.iconComponent
+                          ) : (
                         <i className={skill.icon}></i>
+                        )}
                       </div>
+
                       <div className="skill-name">{skill.name}</div>
                     </div>
                   ))}
