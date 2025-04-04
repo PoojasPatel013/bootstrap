@@ -74,7 +74,7 @@ export default function Contact() {
                 </div>
                 <div className="method-details">
                   <h4>Email</h4>
-                  <a href="mailto:poojaspatel1375@gmail.com">[email protected]</a>
+                  <a href="mailto:poojaspatel1375@gmail.com" className="social-link" target="_blank" rel="noreferrer">[email protected] </a>
                 </div>
               </div>
 
@@ -84,7 +84,7 @@ export default function Contact() {
                 </div>
                 <div className="method-details">
                   <h4>LinkedIn</h4>
-                  <a href="https://www.linkedin.com/in/pooja-p-77329933b/" target="_blank" rel="noreferrer">
+                  <a href="https://www.linkedin.com/in/pooja-p-77329933b/" className= "social-link" target="_blank" rel="noreferrer">
                     linkedin.com
                   </a>
                 </div>

@@ -73,8 +73,11 @@ export default function Header() {
             <a href="https://www.linkedin.com/in/pooja-p-77329933b/" target="_blank" rel="noreferrer">
               <i className="fab fa-linkedin-in"></i>
             </a>
-            <a href="https://x.com/PoojaPatel55629" target="_blank" rel="noreferrer">
-              <i className="fab fa-twitter"></i>
+            <a href="https:github.com/PoojasPatel013" target="_blank" rel="noreferrer">
+              <i className="fab fa-github"></i>
+            </a>
+            <a href="https://developers.google.com/profile/u/103599152646825029853/edit?utm_source=developer.android.com" className="social-link" target="_blank" rel="noreferrer">
+                <i className="fab fa-google"></i>
             </a>
           </div>
         </div>
