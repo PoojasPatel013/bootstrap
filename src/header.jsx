@@ -24,14 +24,12 @@ export default function Header() {
     <header className={`header ${scrolled ? "scrolled" : ""}`}>
       <div className="container">
         <div className="header-content">
-          <a href="#hero" className="logo">
-            PP
-          </a>
-          <p
-            style={{ color: "black", fontFamily: "'Dancing Script', cursive", fontSize: "1.5rem", fontWeight: "bold" }}
-          >
-            Architecting Clouds, Crafting Regal Stories
-          </p>
+          <div className="logo-container">
+            <a href="#hero" className="logo">
+              PP
+            </a>
+            <p className="tagline">Architecting Clouds, Crafting Regal Stories</p>
+          </div>
 
           <div className={`menu-toggle ${isMenuOpen ? "active" : ""}`} onClick={toggleMenu}>
             <div className="bar"></div>
@@ -39,35 +37,28 @@ export default function Header() {
             <div className="bar"></div>
           </div>
 
-          {/* <nav>
+          <nav>
             <ul className={`nav-links ${isMenuOpen ? "active" : ""}`}>
-              <li>
-                <a href="#about" onClick={() => setIsMenuOpen(false)}>
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="#skills" onClick={() => setIsMenuOpen(false)}>
-                  Expertise
-                </a>
-              </li>
-              <li>
-                <a href="#education-experience" onClick={() => setIsMenuOpen(false)}>
-                  Credentials
-                </a>
-              </li>
-              <li>
-                <a href="#achievements" onClick={() => setIsMenuOpen(false)}>
-                  Achievements
-                </a>
-              </li>
-              <li>
-                <a href="#contact" onClick={() => setIsMenuOpen(false)}>
-                  Contact
-                </a>
+              <li className="mobile-social-icons">
+                <div className="social-icons-mobile">
+                  <a href="https://www.linkedin.com/in/pooja-p-77329933b/" target="_blank" rel="noreferrer">
+                    <i className="fab fa-linkedin-in"></i>
+                  </a>
+                  <a href="https:github.com/PoojasPatel013" target="_blank" rel="noreferrer">
+                    <i className="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://developers.google.com/profile/u/103599152646825029853/edit?utm_source=developer.android.com"
+                    className="social-link"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="fab fa-google"></i>
+                  </a>
+                </div>
               </li>
             </ul>
-          </nav> */}
+          </nav>
 
           <div className="social-icons">
             <a href="https://www.linkedin.com/in/pooja-p-77329933b/" target="_blank" rel="noreferrer">
@@ -76,8 +67,13 @@ export default function Header() {
             <a href="https:github.com/PoojasPatel013" target="_blank" rel="noreferrer">
               <i className="fab fa-github"></i>
             </a>
-            <a href="https://developers.google.com/profile/u/103599152646825029853/edit?utm_source=developer.android.com" className="social-link" target="_blank" rel="noreferrer">
-                <i className="fab fa-google"></i>
+            <a
+              href="https://developers.google.com/profile/u/103599152646825029853/edit?utm_source=developer.android.com"
+              className="social-link"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="fab fa-google"></i>
             </a>
           </div>
         </div>
