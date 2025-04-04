@@ -67,6 +67,13 @@ export default function Projects() {
       codeLink: "https://github.com/PoojasPatel013/bootstrap"
     },
     {
+      title: "Client Website",
+      description: "A responsive website for a client, That showcases their services.",
+      tech: ["Gulp", "Bootstrap"],
+      demoLink: "#",
+      codeLink: "#",
+    },
+    {
       title: "Disha Patel- Portfolio",
       description: "A personal portfolio website showcasing her projects and skills.",
       tech: ["Wordpress", "No-Code"],

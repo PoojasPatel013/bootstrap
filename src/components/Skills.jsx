@@ -20,10 +20,11 @@ export default function Skills() {
           {name: "gulp", icon: "fab fa-gulp"},
           {name: "express", icon: "fab fa-node-js"},
           {name: "bootstrap", icon: "fab fa-bootstrap"},
+          {name: "Angular", icon: "fab fa-angular"},
+          {name: "Spring", icon: "fab fa-java"},
           { name: "Tailwind CSS", icon: "fab fa-css3-alt" },
           { name: "Material UI", icon: "fab fa-css3-alt" },
-          { name: "Flask", icon: "fab fa-python" }
-          
+          { name: "Flask", icon: "fab fa-python" },
         ],
       },
       {
@@ -44,27 +45,31 @@ export default function Skills() {
         ],
       },
       {
-        title: "No-Code Tools",
-        skills: [
-          { name: "WordPress", icon: "fab fa-wordpress" },
-          {name: "framer", icon: ""},
-        ],
-      },
-      {
         title: "Tools & Technologies",
         skills: [
           { name: "Git", icon: "fab fa-git-alt" },
-          { name: "GitHub", icon: "fab fa-github" },
           { name: "Kali Linux", icon: "fas fa-shield-alt" },
+          { name: "WordPress", icon: "fab fa-wordpress" },
           {name: "Cisco Packet Tracer", icon: "fas fa-network-wired"},
           { name: "Postman", icon: "fas fa-paper-plane" },
-          { name: "Canva", icon: "fab fa-canva" },
           { name: "Microsoft excel", icon: "fas fa-table" },
-          { name: "Microsoft Powerpoint", icon: "fas fa-file-powerpoint" },
-          { name: "Microsoft Word", icon: "fas fa-file-word" },
-
         ],
       },
+      {
+        title: "Deployment & CI/CD",
+        skills: [
+          {name: "render.com", icon: "fas fa-cloud" },
+          {name: "vercel", icon: "fas fa-cloud" },
+          { name: "GitHub Actions", icon: "fab fa-github" },
+        ],
+      },
+      {
+        title: "Mobile Development/ Current Learning",
+        skills: [
+          { name: "Android", icon: "fab fa-android" },
+          { name: "React Native", icon: "fab fa-react" },
+        ],
+      }
     ]
   
     return (
