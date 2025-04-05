@@ -1,4 +1,4 @@
-import PixelCard from "./animations/Components/PixelCard/PixelCard"
+import PixelCard from "./animations/Components/SpotlightCard/SpotlightCard"
 
 export default function Memberships() {
   const memberships = [

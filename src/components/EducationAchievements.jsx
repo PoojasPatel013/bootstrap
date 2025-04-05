@@ -37,10 +37,6 @@ export default function EducationAchievements() {
                       </p>
                       <ul className="list-disc pl-5 space-y-1">
                         <li>
-                          Conducted vulnerability assessments and penetration testing on 10+ systems, reducing security
-                          risks by 30%.
-                        </li>
-                        <li>
                           Gained hands-on experience in ethical hacking, Kali Linux, Windows access control, and
                           security breach prevention.
                         </li>
