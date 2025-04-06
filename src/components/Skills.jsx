@@ -1,6 +1,7 @@
 import { SiLatex } from 'react-icons/si';
 import { SiTypescript } from 'react-icons/si';
 import { SiKotlin } from 'react-icons/si';
+import { TbBrandNextjs } from "react-icons/tb"
 export default function Skills() {
     const skillCategories = [
       {
@@ -24,7 +25,7 @@ export default function Skills() {
           {name: "Angular", icon: "fab fa-angular"},
           {name: "Spring", icon: "fab fa-java"},
           { name: "Tailwind CSS", icon: "fab fa-css3-alt" },
-          { name: "Material UI", icon: "fab fa-css3-alt" },
+          { name: "NextJS", iconComponent: <TbBrandNextjs /> },
           { name: "Flask", icon: "fab fa-python" },
         ],
       },
