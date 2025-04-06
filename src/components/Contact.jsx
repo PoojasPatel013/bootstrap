@@ -106,7 +106,7 @@ export default function Contact() {
                 <i className="fa-brands fa-stack-overflow"></i>
                 <span>StackOverflow</span>
               </a>
-              <a href="https://developers.google.com/profile/u/103599152646825029853/edit?utm_source=developer.android.com" className="social-link" target="_blank" rel="noreferrer">
+              <a href="https://developers.google.com/profile/u/103599152646825029853" className="social-link" target="_blank" rel="noreferrer">
                 <i className="fab fa-google"></i>
                 <span>Google</span>
               </a>

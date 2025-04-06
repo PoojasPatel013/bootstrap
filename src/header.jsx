@@ -68,7 +68,7 @@ export default function Header() {
               <i className="fab fa-github"></i>
             </a>
             <a
-              href="https://developers.google.com/profile/u/103599152646825029853/edit?utm_source=developer.android.com"
+              href="https://developers.google.com/profile/u/103599152646825029853"
               className="social-link"
               target="_blank"
               rel="noreferrer"
