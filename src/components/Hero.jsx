@@ -64,9 +64,10 @@ export default function Hero() {
               <i className="fas fa-envelope mr-2"></i> Email
             </a>
             
-            <a href="../public/resume.pdf" download className="btn">
+            <a href="/resume.pdf" download className="btn">
               <i className="fas fa-file-download mr-2"></i> Download Resume
             </a>
+
           </div>
         </div>
       </div>
