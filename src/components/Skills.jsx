@@ -12,6 +12,7 @@ export default function Skills() {
           { name: "CSS", icon: "fab fa-css3-alt" },
           { name: "JavaScript", icon: "fab fa-js" },
           {name: "python", icon: "fab fa-python"},
+          {name: "TypeScript", iconComponent: <SiTypescript />},
         ],
       },
       {
@@ -72,7 +73,6 @@ export default function Skills() {
           { name: "Android", icon: "fab fa-android" },
           { name: "React Native", icon: "fab fa-react" },
           {name: "Kotlin", iconComponent: <SiKotlin />},
-          {name: "TypeScript", iconComponent: <SiTypescript />},
         ],
       }
     ]
